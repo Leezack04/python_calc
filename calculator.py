@@ -1,9 +1,22 @@
-print("===== Python Calculator =====")
 import sys
- 
-num1 = float(sys.argv[1])
-opp = string(sys.argv[1])
-num2 = float(sys.argv[2])
- 
-print(f"Result: {num1 + num2}")
 
+print("===== Python Calculator =====")
+
+num1 = int(sys.argv[1])
+opp = sys.argv[2]
+num2 = int(sys.argv[3])
+
+if opp == "+":
+    print("Result:", num1 + num2)
+
+elif opp == "-":
+    print("Result:", num1 - num2)
+
+elif opp == "*":
+    print("Result:", num1 * num2)
+
+elif opp == "/":
+    print("Result:", num1 / num2)
+
+else:
+    print("Invalid Operator")
