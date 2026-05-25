@@ -1,32 +1,23 @@
 # calculator.py
 
-# calculator.py
-
-print("===== Python Calculator =====")
-
-# Get user input
-num1 = 
+# Simple Python Calculator
+# Get user inputs
+num1 = float(input("Enter first number: "))
 operator = input("Enter operator (+, -, *, /): ")
-num2 = 
-# Perform calculation
+num2 = float(input("Enter second number: "))
+
+# Perform operation based on operator type
 if operator == "+":
-    result = num1 + num2
-    print("Result:", result)
-
+    print(f"Result: {num1 + num2}")
 elif operator == "-":
-    result = num1 - num2
-    print("Result:", result)
-
+    print(f"Result: {num1 - num2}")
 elif operator == "*":
-    result = num1 * num2
-    print("Result:", result)
-
+    print(f"Result: {num1 * num2}")
 elif operator == "/":
+    # Handle division by zero
     if num2 != 0:
-        result = num1 / num2
-        print("Result:", result)
+        print(f"Result: {num1 / num2}")
     else:
-        print("Error: Division by zero is not allowed")
-
+        print("Error: Division by zero is not allowed.")
 else:
-    print("Invalid operator")
+    print("Invalid operator! Please use +, -, *, or /.")
