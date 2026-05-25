@@ -5,10 +5,9 @@
 print("===== Python Calculator =====")
 
 # Get user input
-num1 = float(input("Enter first number: "))
+num1 = 
 operator = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))
-
+num2 = 
 # Perform calculation
 if operator == "+":
     result = num1 + num2
