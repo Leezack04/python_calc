@@ -2,30 +2,10 @@
 
 print("===== Python Calculator =====")
 
-# Get user input
-num1 = float(input("Enter first number: "))
-operator = input("Enter operator (+, -, *, /): ")
-num2 = float(input("Enter second number: "))
+num1 = 10
+num2 = 2
 
-# Perform calculation
-if operator == "+":
-    result = num1 + num2
-    print("Result:", result)
-
-elif operator == "-":
-    result = num1 - num2
-    print("Result:", result)
-
-elif operator == "*":
-    result = num1 * num2
-    print("Result:", result)
-
-elif operator == "/":
-    if num2 != 0:
-        result = num1 / num2
-        print("Result:", result)
-    else:
-        print("Error: Division by zero is not allowed")
-
-else:
-    print("Invalid operator")
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
+print("Division:", num1 / num2)
