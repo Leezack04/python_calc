@@ -1,7 +1,7 @@
 print("===== Python Calculator =====")
 
 # Get user input
-num1 = 5
+num1 = 8
 operator = input("Enter operator (+, -, *, /): ")
 num2 = 5
 
